@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h1>Course Registration Form</h1>
+        <form action="http://127.0.0.1:8000/firstapp/">
+            <fieldset>
+
+                <legend>Personal Details</legend>
+                <table>
+                    <tr>
+                        <td><label for="fn">First Name: </label></td>
+                        <td><input type="text" name="firstname" pattern="[A-Za-z]*" placeholder="Enter Your First Name" size="20" maxlength="15" required id="fn"></td>
+                    </tr>
+    
+                    <tr>
+                        <td><label for="ln">Surame: </label></td>
+                        <td><input type="text" name="lastname" pattern="[A-Za-z]*" placeholder="Enter Your Surame" size="20" maxlength="15" id="ln"></td>
+                    </tr>
+
+                    <tr>
+                        <td> <label for="mn">Mobile Number: </label>  </td>
+                        <td> <input type="tel" name="mob" placeholder="Mobile Number" maxlength="13" id="mn"> </td>
+                    </tr>
+
+                    <tr>
+                        <td> <label for="email">Email: </label> </td>
+                        <td> <input type="email" name="email" placeholder="example@gmail.com" id="email"> </td>
+                    </tr>
+
+                    <tr>
+                        <td> <label for="p">Password:</label> </td>
+                        <td> <input type="password" name="pswd" minlength="5" maxlength="10" placeholder="password" required id="p"> </td>
+                    </tr>
+
+                    <tr> 
+                        <td> <label for="cp">Confirm Password:</label> </td>
+                        <td> <input type="password" name="Cpswd" minlength="5" maxlength="10" placeholder="password" required id="cp"> </td>
+                    </tr>
+
+                    <tr>
+                        <td> <label for="dob">DOB:</label></td>
+                        <td> <input type="date" name="DOB" id="dob"> </td>
+                    </tr>
+
+                    <tr>
+                        <td> <label for="Gen">Gender: </label> </td>
+                        <td>
+                             <input type="radio" name="Gender" value="M" id="Gen">Male
+                             <input type="radio" name="Gender" value="f" id="Gen">Female
+                             <input type="radio" name="Gender" value="c" id="Gen">Custom
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="country">Select Country: </label> 
+                        </td>
+                        <td>
+                            <select name="Country" id="country">
+                                <option value="India" >INDIA</option>
+                                <option value="USA" >USA</option>
+                                <option value="America" >AMERICA</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="pic">Upload Picture</label></td>
+                        <td><input type="file" id="pic"></td>
+                    </tr>
+
+                    <tr>
+                        <td> <input type="reset">  </td>
+                    </tr>
+ 
+                </table>
+
+            </fieldset>
+
+            <fieldset>
+
+                <legend>Course Details</legend>
+                <table>
+                    <tr>
+                        <td>
+                            <label for="course">Select Course </label>
+                        
+                            <select name="Course" id="course">
+                                <option value="javaf" >Java Full Stack Course</option>
+                                <option value="Pythonf" >Python Full Stack Course</option>
+                                <option value="Mernf" >MERN Full Stack Course</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="dm">Delivery Mode</label>
+                            <input type="checkbox" name="Mode1" value="ON" id="dm">ONLINE
+                            <input type="checkbox" name="Mode2" value="OFF" id="dm">OFFLINE
+                        </td>
+                    </tr>
+
+                    <tr><td><label for="com">Comments</label></td></tr>
+                    <tr>
+                        <td>
+                            <textarea rows="2" cols="30" id="com">When will the new batch start?</textarea>
+                        </td>
+                    </tr>
+
+                    
+                </table>
+            </fieldset>
+
+             
+            <input type="image" src="https://imgs.search.brave.com/Px2Yd0d8KdRzrlRl7m20iLjQgUfEUrKW_lbtusGw_tI/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzAwLzI4LzI3Lzk1/LzM2MF9GXzI4Mjc5/NTU4X1NxTlhvWldz/UUxmV1lWeHlLZTlo/VnpaNDlkSnRLTHNj/LmpwZw" 
+            alt="Submit" width="80" height="80">
+
+            
+            
+        </form>
+</body>
+</html>
+
+ 
+ 
